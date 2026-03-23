@@ -5,7 +5,7 @@
 # # cheatsheets
 
 <p align="center">
-  <img src=".images/Cheat-Sheets.webp"
+  <img src="images/Cheat-Sheets.webp"
        alt="Ein Bild"
        width=""
        height="150">

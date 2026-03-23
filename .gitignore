@@ -26,7 +26,7 @@
 !*/.gitea/workflows/
 !*/.github/ISSUE_TEMPLATE/
 !*/.github/workflows/
-!*/.images/
+!*/images/
 !*/docs/git/
 
 ##############################################
@@ -52,10 +52,10 @@
 !/.github/workflows/Demo.yaml
 !/.github/workflows/lint.yml
 !/.github/PULL_REQUEST_TEMPLATE.md
-!/.images/Cheat-Sheets.webp
-!/.images/cheatsheets.png
-!/.images/git-cheatsheet.png
-!/.images/social-preview.png
+!/images/Cheat-Sheets.webp
+!/images/cheatsheets.png
+!/images/git-cheatsheet.png
+!/images/social-preview.png
 !/docs/index.md
 !/docs/git/index.md
 !/docs/git/Ordner_zur_Repo_machen.md
