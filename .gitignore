@@ -28,6 +28,7 @@
 !*/.github/workflows/
 !*/images/
 !*/docs/git/
+!*/docs/images/
 
 ##############################################
 # Ausnahme: diese Dateien NICHT ignorieren
@@ -56,7 +57,9 @@
 !/images/cheatsheets.png
 !/images/git-cheatsheet.png
 !/images/social-preview.png
+!/docs/images/favicon.ico
 !/docs/index.md
+!/docs/markdown.md
 !/docs/git/index.md
 !/docs/git/Ordner_zur_Repo_machen.md
 !/.gitattributes
