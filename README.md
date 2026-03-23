@@ -1,5 +1,5 @@
 ![Test Status](https://github.com/sonnytricky/cheatsheets/actions/workflows/lint.yml/badge.svg)
-[![Zensical Docs](https://img.shields.io/badge/Zensical-Docs-blue?style=for-the-badge)](https://zensical.org/docs/customization/)
+[![Zensical Docs](https://img.shields.io/badge/Zensical-Docs-blue?style=flat-square)](https://zensical.org/docs/customization/)
 
 ---
 
