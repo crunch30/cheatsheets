@@ -13,10 +13,6 @@
 
 ---
 
-Klar, ich mache dir eine **saubere Schritt-für-Schritt-Anleitung für Zensical mit virtueller Umgebung (venv)** – so, dass du es direkt im Code-Server oder lokal nutzen kannst. 🚀
-
----
-
 # 🧭 Schritt-für-Schritt: Zensical Setup (inkl. venv)
 
 ---
