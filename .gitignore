@@ -21,13 +21,13 @@
 ##############################################
 # Verzeichnisse wieder erlauben                  # !*/Unterordner/
 ##############################################
-!*/.docs/
+!*/.docs/Anleitungen/
 !*/.gitea/ISSUE_TEMPLATE/
 !*/.gitea/workflows/
 !*/.github/ISSUE_TEMPLATE/
 !*/.github/workflows/
 !*/.images/
-!*/docs/Anleitungen/
+!*/docs/git/
 
 ##############################################
 # Ausnahme: diese Dateien NICHT ignorieren
@@ -52,8 +52,13 @@
 !/.github/workflows/Demo.yaml
 !/.github/workflows/lint.yml
 !/.github/PULL_REQUEST_TEMPLATE.md
-!/.images/templates.png
-!/.images/example.png
+!/.images/Cheat-Sheets.webp
+!/.images/cheatsheets.png
+!/.images/git-cheatsheet.png
+!/.images/repo-logo.png
+!/docs/index.md
+!/docs/git/index.md
+!/docs/git/Ordner_zur_Repo_machen.md
 !/.gitattributes
 !/.gitignore
 # WICHTIG: .yamllint <-> ignoriert Fehler für Stil
@@ -62,6 +67,7 @@
 !/CODE_OF_CONDUCT.md
 !/CONTRIBUTING.md
 !/LICENSE
+!/mkdocs.yml
 !/README.md
 !/zensical.toml
 
