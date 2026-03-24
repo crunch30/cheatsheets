@@ -1,6 +1,13 @@
 ---
 name: YAML & Python Check
-on: [push]
+
+on:
+  push:
+    branches:
+      - main   # oder der Branch, in den gemerged werden soll
+  pull_request:
+    branches:
+      - main   # gilt für PRs, die auf main gehen
 
 jobs:
   lint:
