@@ -27,10 +27,13 @@
 !*/.github/ISSUE_TEMPLATE/
 !*/.github/workflows/
 !*/images/
+!*/docs/assets/icons/
+!*/docs/examples/
 !*/docs/git/
-!*/docs/assets/logo.png
 !*/docs/images/
+!*/docs/markdown/
 !*/docs/stylesheets/
+!*/override/.icons/
 
 ##############################################
 # Ausnahme: diese Dateien NICHT ignorieren
@@ -56,17 +59,24 @@
 !/.github/docs.yml
 !/.github/workflows/lint.yml
 !/.github/PULL_REQUEST_TEMPLATE.md
-!/images/Cheat-Sheets.webp
-!/images/cheatsheets.png
-!/images/git-cheatsheet.png
-!/images/social-preview.png
 !/docs/images/favicon.png
+!/docs/assets/git-cheatsheet.png
 !/docs/assets/logo.png
+!/docs/examples/index.md
+!/docs/examples/Notitzen.md
+!/docs/examples/Seite_1.md
+!/docs/examples/Seite_2.md
+!/docs/markdown/markdown.md
 !/docs/stylesheets/extra.css
 !/docs/index.md
 !/docs/markdown.md
 !/docs/git/index.md
 !/docs/git/Ordner_zur_Repo_machen.md
+!/images/Cheat-Sheets.webp
+!/images/cheatsheets.png
+!/images/git-cheatsheet.png
+!/images/social-preview.png
+!/overrides/.icons/note-text-outline.svg
 !/.gitattributes
 !/.gitignore
 # WICHTIG: .yamllint <-> ignoriert Fehler für Stil
