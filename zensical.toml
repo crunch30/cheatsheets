@@ -53,10 +53,6 @@ language = "de"                                                             # wa
 # features
 # ----------------------------------------------------------------------------
 
-# TODO:
-# - [ ] mit tabs
-# - [ ] es soll zuerst alles eingeklappt sein 
-
 features = [
     # Zensical includes an announcement bar. This feature allows users to
     # dismiss it when they have read the announcement.
@@ -67,10 +63,7 @@ features = [
 
     "content.action.view",                                                  # View source of this page on github
 
-    # Code annotations allow you to add an icon with a tooltip to your
-    # code blocks to provide explanations at crucial points.
-    # https://zensical.org/docs/authoring/code-blocks/#code-annotations
-    "content.code.annotate",
+    "content.code.annotate",                                                 # 
 
     "content.code.copy",                                                     # copy button
 
@@ -97,11 +90,11 @@ features = [
     # https://zensical.org/docs/setup/header/#automatic-hiding
     # "header.autohide",
 
-#   "navigation.expand",                                                   # Navigaion ausgeklappt
+#   "navigation.expand",                                                   # Navigaion immer ausgeklappt
 
-    "navigation.footer",
+    "navigation.footer",                                                  # Pfeile auf den Footer
 
-    "navigation.indexes",                                                 # Inhaltsverzeichnisseiten
+    "navigation.indexes",                                                 # Inhaltsverzeichnis auf den index Seiten
 
     "navigation.instant",                                                 # Klicks funktionieren ohne dass die Seite immer alles läd
 
@@ -127,7 +120,7 @@ features = [
 
     "toc.follow",                                                           # verfolgt die Überschriften
 
-#    "toc.integrate",                                                       # Inhaltsverzeichnis in den Überschriften
+#    "toc.integrate",                                                       # Inhaltsverzeichnis links, wenn aus dann rechts
 ]
 
 # ---------------------------------------------------------------------------
@@ -167,6 +160,12 @@ accent = "orange"                                                             # 
 icon = "fontawesome/brands/github"
 link = "https://github.com/sonnytricky"
 name = "sonnytricky on GitHub"
+
+# Mail
+[[project.extra.social]]
+icon = "fontawesome/regular/envelope" 
+link = "mailto:<sonnytricky@gmail.com>"
+name = "sonnytricky@gmail.com"
 
 # Instagram
 [[project.extra.social]]
