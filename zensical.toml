@@ -1,4 +1,6 @@
+# ----------------------------------------------------------------------------
 [project]
+# ----------------------------------------------------------------------------
 
 site_name = "cheatsheets"
 site_description = ""
@@ -26,7 +28,13 @@ nav = [
      "git/index.md",
      "git/Ordner_zur_Repo_machen.md" 
   ]},
-  {"Markdown" = "markdown/markdown.md"}  
+  {"Markdown" = "markdown/markdown.md"},  
+  {"Examples" = [
+     "examples/index.md",
+     "examples/Seite_1.md",
+     "examples/Seite_2.md",
+     "examples/Notitzen.md"
+  ]},
 ]
 
 # ----------------------------------------------------------------------------
@@ -43,72 +51,58 @@ nav = [
 [project.theme]
 #variant = "classic"                                                        # classic = mklook
 
-#custom_dir = "overrides"                                                   # in diesem ordner kann man die zensical HTML-vorlagen überschreiben, ist auch für die bootstrap-logos
+custom_dir = "overrides"                                                   # in diesem ordner kann man die zensical HTML-vorlagen überschreiben, ist auch für die bootstrap-logos
 
 favicon = "images/favicon.png"                                              # der image ordner muss in docs/ sein
 logo = "assets/logo.png"                                                    # der assets ordner muss in den docs/sein
 language = "de"                                                             # war auf "en"
+
 
 # ----------------------------------------------------------------------------
 # features
 # ----------------------------------------------------------------------------
 
 features = [
-    # Zensical includes an announcement bar. This feature allows users to
-    # dismiss it when they have read the announcement.
-    # https://zensical.org/docs/setup/header/#announcement-bar
-    "announce.dismiss",
 
-#    "content.action.edit",                                                  # Edit this page on github  # es muss dann noch -> unter [projekt] edit_uri = "edit/main/docs/" stehen
+    "announce.dismiss",                                                     # Ankündigungen auf dem Header als gelesen markieren
+
+#   "content.action.edit",                                                  # Edit this page on github  # es muss dann noch -> unter [projekt] edit_uri = "edit/main/docs/" stehen
 
     "content.action.view",                                                  # View source of this page on github
 
-    "content.code.annotate",                                                 # 
+    "content.code.annotate",                                                # 
 
-    "content.code.copy",                                                     # copy button
+    "content.code.copy",                                                    # copy button
 
-#    "content.code.select",
+#   "content.code.select",                                                  #
 
-    # Zensical can render footnotes as inline tooltips, so the user can read
-    # the footnote without leaving the context of the document.
-    # https://zensical.org/docs/authoring/footnotes/#footnote-tooltips
-    "content.footnote.tooltips",
+    "content.footnote.tooltips",                                            #
 
-    # If you have many content tabs that have the same titles (e.g., "Python",
-    # "JavaScript", "Cobol"), this feature causes all of them to switch to
-    # at the same time when the user chooses their language in one.
-    # https://zensical.org/docs/authoring/content-tabs/#linked-content-tabs
-    "content.tabs.link",
+    "content.tabs.link",                                                    #
 
-    # With this feature enabled users can add tooltips to links that will be
-    # displayed when the mouse pointer hovers the link.
-    # https://zensical.org/docs/authoring/tooltips/#improved-tooltips
-    "content.tooltips",
+    "content.tooltips",                                                     # Tooltipps müssen in der jeweiligen mk-Datei angegeben werden # [Hover me](https://example.com "I'm a tooltip!")
 
-    # With this feature enabled, Zensical will automatically hide parts
-    # of the header when the user scrolls past a certain point.
-    # https://zensical.org/docs/setup/header/#automatic-hiding
-    # "header.autohide",
+#   "header.autohide",                                                      # Header verschwindet beim scrollen
 
-#   "navigation.expand",                                                   # Navigaion immer ausgeklappt
+#   "navigation.expand",                                                    # Navigaion immer ausgeklappt
 
-    "navigation.footer",                                                  # Pfeile auf den Footer
+    "navigation.footer",                                                    # Pfeile auf den Footer
 
-    "navigation.indexes",                                                 # Inhaltsverzeichnis auf den index Seiten
+    "navigation.indexes",                                                   # Inhaltsverzeichnis auf den index Seiten
 
-    "navigation.instant",                                                 # Klicks funktionieren ohne dass die Seite immer alles läd
+    "navigation.instant",                                                   # Klicks funktionieren ohne dass die Seite immer alles läd
 
-    "navigation.instant.prefetch",                                         # Sofortiges Vorladen
+    "navigation.instant.prefetch",                                          # Sofortiges Vorladen
 
-#   "navigation.instant.progress",                                         # Fortschritsanzeige
+#   "navigation.instant.progress",                                          # Fortschritsanzeige
 
     "navigation.path",                                                      # es steht dann oben der Pfad 
 
-#   "navigation.prune",                                                    # ob der Text scrollt oder nicht
+#   "navigation.prune",                                                     # ob der Text scrollt oder nicht
 
-#    "navigation.sections",                                                 # Navigationsabschnitte
+#   "navigation.sections",                                                  # Navigationsabschnitte
 
-#    "navigation.tabs",                                                     # tabs in der Header leiste
+#   "navigation.tabs",                                                      # tabs in der Header leiste
 
     "navigation.tabs.sticky",                                               # linke seitenleiste immer sichtbar
 
@@ -116,21 +110,41 @@ features = [
 
     "navigation.tracking",                                                  # Ankerverfolgung der Überschriften
 
-    "search.highlight",
+    "search.highlight",                                                     # Bei der Suche werden die Ergebnisse hervorgehoben
 
     "toc.follow",                                                           # verfolgt die Überschriften
 
-#    "toc.integrate",                                                       # Inhaltsverzeichnis links, wenn aus dann rechts
+#   "toc.integrate",                                                        # Inhaltsverzeichnis links, wenn aus dann rechts
 ]
+
+# ---------------------------------------------------------------------------
+
+# [project.markdown_extensions.abbr]
+# [project.markdown_extensions.attr_list]
+# [project.markdown_extensions.pymdownx.snippets]
+# [project.markdown_extensions.def_list]
+# [project.markdown_extensions.pymdownx.tasklist]
+# custom_checkbox = true
+
+## Hervorhebungen
+[project.markdown_extensions.admonition]
+[project.markdown_extensions.pymdownx.details]
+[project.markdown_extensions.pymdownx.superfences]
+
+# Für die Icons
+[project.markdown_extensions.pymdownx.emoji]
+emoji_index = "zensical.extensions.emoji.twemoji"
+emoji_generator = "zensical.extensions.emoji.to_svg"
+options.custom_icons = ["overrides/.icons"]
 
 # ---------------------------------------------------------------------------
 
 #[project.theme.icon]
 #logo = "lucide/smile"
 
-#[project.theme.font]                                                         # ändert die Schriftart
-#text = "Inter"                                                               # ändert die Schriftart
-#code = "Jetbrains Mono"                                                      # ändert die Schriftart
+#[project.theme.font]                                                       # ändert die Schriftart
+#text = "Inter"                                                             # ändert die Schriftart
+#code = "Jetbrains Mono"                                                    # ändert die Schriftart
 
 # --------------------------------------------------------------------------- 
 # Hell und Dunkel modus und deren icons
@@ -146,8 +160,8 @@ scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
 
-primary = "indigo"                                                            # red pink purple deep purple indigo blue light blue cyan teal green light green lime yellow amber orange deep orange brown grey blue grey black white
-accent = "orange"                                                             # red pink purple deep purple indigo blue light blue cyan teal green light green lime yellow amber orange deep orange
+primary = "indigo"                                                           # red pink purple deep purple indigo blue light blue cyan teal green light green lime yellow amber orange deep orange brown grey blue grey black white
+accent = "orange"                                                            # red pink purple deep purple indigo blue light blue cyan teal green light green lime yellow amber orange deep orange
 
 # ----------------------------------------------------------------------------
 # The "extra" section contains miscellaneous settings.
