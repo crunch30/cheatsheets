@@ -52,6 +52,11 @@ language = "de"                                                             # wa
 # ----------------------------------------------------------------------------
 # features
 # ----------------------------------------------------------------------------
+
+# TODO:
+# - [ ] mit tabs
+# - [ ] es soll zuerst alles eingeklappt sein 
+
 features = [
     # Zensical includes an announcement bar. This feature allows users to
     # dismiss it when they have read the announcement.
@@ -98,7 +103,7 @@ features = [
 
     "navigation.indexes",                                                 # Inhaltsverzeichnisseiten
 
-    "navigation.instant",                                                 # Vorladen der Seiten
+    "navigation.instant",                                                 # Klicks funktionieren ohne dass die Seite immer alles läd
 
     "navigation.instant.prefetch",                                         # Sofortiges Vorladen
 
@@ -108,9 +113,9 @@ features = [
 
 #   "navigation.prune",                                                    # ob der Text scrollt oder nicht
 
-#   "navigation.sections",                                                 # Navigationsabschnitte
+#    "navigation.sections",                                                 # Navigationsabschnitte
 
-#   "navigation.tabs",                                                     # tabs in der Header leiste
+#    "navigation.tabs",                                                     # tabs in der Header leiste
 
     "navigation.tabs.sticky",                                               # linke seitenleiste immer sichtbar
 
