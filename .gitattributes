@@ -94,8 +94,8 @@ out/**         linguist-generated=true
 # ========================
 # Ordner ignorieren
 # ========================
-# .docs/** linguist-vendored=true
-
+ .docs/** linguist-vendored=true
+docs/** linguist-vendored=true
 # # ========================
 # # YAML wird ignoriert
 # # ========================
