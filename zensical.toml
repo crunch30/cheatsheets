@@ -33,7 +33,7 @@ nav = [
      "examples/index.md",
      "examples/Seite_1.md",
      "examples/Seite_2.md",
-     "examples/Notitzen.md"
+     "examples/Notizen.md"
   ]},
 ]
 
@@ -70,11 +70,11 @@ features = [
 
     "content.action.view",                                                  # View source of this page on github
 
-    "content.code.annotate",                                                # 
+    "content.code.annotate",                                                # Anmerkungen in Code-Blöcken hinzufügen
 
     "content.code.copy",                                                    # copy button
 
-#   "content.code.select",                                                  #
+#   "content.code.select",                                                  # 
 
     "content.footnote.tooltips",                                            #
 
@@ -102,7 +102,7 @@ features = [
 
 #   "navigation.sections",                                                  # Navigationsabschnitte
 
-#   "navigation.tabs",                                                      # tabs in der Header leiste
+    "navigation.tabs",                                                      # tabs in der Header leiste
 
     "navigation.tabs.sticky",                                               # linke seitenleiste immer sichtbar
 
@@ -136,6 +136,15 @@ features = [
 emoji_index = "zensical.extensions.emoji.twemoji"
 emoji_generator = "zensical.extensions.emoji.to_svg"
 options.custom_icons = ["overrides/.icons"]
+
+# Syntaxhervorhebung für Code-Blöcke
+[project.markdown_extensions.pymdownx.highlight]
+anchor_linenums = true
+line_spans = "__span"
+pygments_lang_class = true
+[project.markdown_extensions.pymdownx.inlinehilite]
+[project.markdown_extensions.pymdownx.snippets]
+#[project.markdown_extensions.pymdownx.superfences]
 
 # ---------------------------------------------------------------------------
 

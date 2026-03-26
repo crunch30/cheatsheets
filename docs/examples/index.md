@@ -1,9 +1,3 @@
 ---
-icon: simple/exercism
+icon: simple/notepadplusplus
 ---
-
-# Git
-
-## Seiten
-
-- [Ordner zur Repo machen](Ordner_zur_Repo_machen.md)

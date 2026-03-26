@@ -1,3 +1,3 @@
 ---
-icon: simple/exercism
+icon: simple/notepadplusplus
 ---
