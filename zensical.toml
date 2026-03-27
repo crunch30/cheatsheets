@@ -22,20 +22,20 @@ site_dir = "site"
 # navigation
 # ----------------------------------------------------------------------------
 
-nav = [
-  {"Get started" = "index.md"},
-  {"GIT" = [
-     "git/index.md",
-     "git/Ordner_zur_Repo_machen.md" 
-  ]},
-  {"Markdown" = "markdown/markdown.md"},  
-  {"Examples" = [
-     "examples/index.md",
-     "examples/Checkboxen.md",
-     "examples/Code-Blöcke.md",
-     "examples/Notizen.md"
-  ]},
-]
+#nav = [
+#  {"Get started" = "index.md"},
+#  {"GIT" = [
+#     "git/index.md",
+#     "git/Ordner_zur_Repo_machen.md" 
+#  ]},
+#  {"Markdown" = "markdown/markdown.md"},  
+#  {"Examples" = [
+#     "examples/index.md",
+#     "examples/Checkboxen.md",
+#     "examples/Code-Blöcke.md",
+#     "examples/Notizen.md"
+#  ]},
+#]
 
 # ----------------------------------------------------------------------------
 # css und javascript
