@@ -57,6 +57,7 @@ custom_dir = "overrides"                                                    # in
 
 favicon = "images/cheatsheets-logo-favicon.png"                             # der image ordner muss in docs/ sein
 logo = "assets/cheatsheets-logo.png"                                        # der assets ordner muss in den docs/sein
+
 language = "de"                                                             # war auf "en"
 
 
