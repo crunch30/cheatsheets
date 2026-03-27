@@ -22,6 +22,8 @@ site_dir = "site"
 # navigation
 # ----------------------------------------------------------------------------
 
+# Wenn man die Navigation auskommentiert, funktioniert die automatische Ordnererstellung
+
 #nav = [
 #  {"Get started" = "index.md"},
 #  {"GIT" = [
