@@ -84,3 +84,5 @@ jobs:
           artifacts: zensical-release-${{ env.NEXT_VERSION }}.tar.gz
           draft: false
           prerelease: false
+          immutableCreate: true
+          skipIfReleaseExists: true
