@@ -10,3 +10,19 @@
   color: rgba(0, 0, 0, 0.6);      /* Grauton */
   border: 1px solid rgba(0, 0, 0, 0.4);
 }
+
+/*anderen Copy-Button*/
+.md-clipboard svg {
+  display: none;
+}
+
+.md-clipboard::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-color: currentColor;
+
+  -webkit-mask: url("/assets/icons/copy.svg") no-repeat center;
+  mask: url("/assets/icons/copy.svg") no-repeat center;
+}
