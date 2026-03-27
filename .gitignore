@@ -64,10 +64,11 @@
 !/docs/images/favicon.png
 !/docs/images/cheatsheets-logo-favicon.png
 !/docs/images/gitcheatsheet.png
-!/docs/examples/index.md
-!/docs/examples/Notizen.md
 !/docs/examples/Checkboxen.md
 !/docs/examples/Code-Blöcke.md
+!/docs/examples/index.md
+!/docs/examples/mermaid.md
+!/docs/examples/Notizen.md
 !/docs/markdown/markdown.md
 !/docs/stylesheets/extra.css
 !/docs/index.md
